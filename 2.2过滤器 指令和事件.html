@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .tagname{
+    background: gray;
+    display: block;
+    height: 50px;
+    width: 100px;
+  }
+</style>
+<body>
+  <div id="app">
+    <span>{date | newdate('现在时间是：')}}</span><br>
+    <span>{{apple}}</span><br>
+    <span v-html="banana"></span><br>
+    <button @click="plusNum">{{num}}</button><br>
+    <span :class="className"></span>
+  </div>
+
+
+  <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.min.js"></script>
+
+  <script>
+    var plusDate = function (value) {
+      return value <10 ?"0" + value:value
+    }
+    var app =new Vue({
+      el:'#app',
+      data:{
+        date:new Date(),
+        apple: '苹果',
+        banana: "<span style='color: yellow'>香蕉的颜色</span>",
+        num: 1,
+        className: 'tagname',
+      },
+      methods:{
+        plusNum:function () {
+          this.num =  this.num + 1
+        }
+      },
+      filters:{
+        newdate:function (value,a) {
+          var date = new Date(value)
+          var year = date.getFullYear()
+          var month = plusDate(date.getMonth()+1)
+          var  day  = plusDate(date.getDay())
+          var hours = plusDate(date.getHours())
+          var min = plusDate(date.getMinutes())
+          var  sec = plusDate(date.getSeconds())
+          return a + year + "-"+ month + "-" + day  +'-'+ hours +":"+ min +":"+ sec
+        }
+      },
+      mounted:function () {
+        var _this = this
+        this.timer = setInterval(function () {
+          _this.date = new Date()
+        },1000)
+      },
+      beforeDestroy:function () {
+        if (this.timer){
+          clearInterval(this.timer)
+
+        }
+      }
+
+    })
+  </script>
+</body>
+</html>

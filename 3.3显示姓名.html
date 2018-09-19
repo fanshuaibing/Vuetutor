@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  {{fullName}}
+  <div> 这是通过methods拿到的：{{fullname()}} </div>
+  <div>{{msg}}</div>
+  <div>methods拿到的数据：{{nowme()}}</div>
+  <div>computed拿到的数据： {{nowcom}}</div>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+
+  var app =new Vue({
+    el:'#app',
+    data:{
+      firstName:'zhang',
+      lastName:'san',
+      msg:'不依赖的数据'
+    },
+    methods:{
+      fullname() {
+         fullname =  this.firstName +  this.lastName + this.text
+         return fullname
+      },
+      nowme(){
+        return Date.now()
+      }
+    },
+    //定义计算属性
+    computed:{
+      fullName:function () {
+          return  this.firstName+ ' ' + this.lastName;
+      },
+      nowcom(){
+        return  Date.now()
+      }
+    }
+  })
+</script>
+</body>
+</html>

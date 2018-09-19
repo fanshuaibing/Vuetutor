@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  购物车内商品总价格：{{prices}}
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      package1: [
+        {name:'iphone',price:6666,count:3},
+        {name:'mac',price:16666,count:2}
+      ]
+    },
+    //定义计算属性
+    computed:{
+      prices:function () {
+        var prices =0;
+        for (let i =0;i<this.package1.length;i++) {
+          prices  += this.package1[i].price * this.package1[i].count;
+        }
+        return prices
+      }
+    }
+
+  })
+</script>
+</body>
+</html>
