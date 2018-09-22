@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .divstyle{
+    height: 100px;
+    width: 100px;
+    background: gray;
+    margin: 30px;
+  }
+  .border{
+    border: 5px solid mediumvioletred;
+  }
+  .bgblue{
+    background: blue;
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+
+  }
+</style>
+<body>
+<div id="app">
+     变量语法 <br>
+    <a :href="url">百度首页</a>
+    对象语法 <br>
+    <div :class="{divstyle: isactive}"></div>
+    数组语法 <br>
+    <div :class="[hasbg,hasborder]"></div>
+    数组对象混用 <br>
+    <div :class="[{divstyle:isactive},hasbg]"></div>
+     style的绑定形式，一般不会有数组绑定 <br>
+    <div :style="{'background-color':color}">style的背景颜色</div>
+    data中直接定义的属性 <br>
+    <div :style="style">{{name}}有点好看啊！</div>
+    计算属性拿到的属性 <br>
+    <div :style="style1">{{name}}好看的啊！！！</div>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  var   app =new Vue({
+    el:'#app',
+    data: {
+      url: 'hhtp://baidu.com',
+      isactive: true,
+      hasborder: "border",
+      hasbg: "bgblue",
+      color: 'red',
+      name: 'zhanglaoshi',
+      style: {
+        backgroundColor: "blue",
+        fontSize: " 30px",
+        margin:'20px',
+      },
+    },
+    computed:{
+      style1:function () {
+        return {
+          backgroundColor:"gray",
+          fontSize:"40px",
+          margin:'20px'
+        }
+      }
+    }
+  })
+</script>
+</body>
+</html>

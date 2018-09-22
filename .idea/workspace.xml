@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4910849-0b07-4949-a1d1-25fb94dfe1ff" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/4.1v-bind以及class与style的绑定.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,17 +20,17 @@
       <file leaf-file-name="2.1 数据绑定和指令.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2.1 数据绑定和指令.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" selection-start-line="13" selection-end-line="14" />
+            <state relative-caret-position="220">
+              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2.2过滤器 指令和事件.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2.2过滤器 指令和事件.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2.2过滤器 指令和事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="21" selection-start-line="27" selection-end-line="28" />
+            <state relative-caret-position="1034">
+              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -38,20 +38,29 @@
       <file leaf-file-name="3 .1计算属性.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3 .1计算属性.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="154">
+              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1489">
+              <first_editor relative-caret-position="1716">
                 <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="4.1v-bind以及class与style的绑定.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4.1v-bind以及class与style的绑定.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -100,6 +109,8 @@
         <option value="$PROJECT_DIR$/显示姓名.html" />
         <option value="$PROJECT_DIR$/3.3显示姓名.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/v-bind以及class与style的绑定.html" />
+        <option value="$PROJECT_DIR$/4.1v-bind以及class与style的绑定.html" />
       </list>
     </option>
   </component>
@@ -112,11 +123,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="405" />
-    <option name="y" value="175" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="457" />
+    <option name="y" value="216" />
     <option name="width" value="1225" />
-    <option name="height" value="765" />
+    <option name="height" value="753" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -128,8 +139,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="learnVue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learnVue" type="462c0819:PsiDirectoryNode" />
+              <item name="Vuetutor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vuetutor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -177,12 +188,12 @@
       <workItem from="1537324263248" duration="17133000" />
       <workItem from="1537366902658" duration="20000" />
       <workItem from="1537443060498" duration="95000" />
-      <workItem from="1537443803043" duration="202000" />
+      <workItem from="1537443803043" duration="7093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22103000" />
+    <option name="totallyTimeSpent" value="28994000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -194,10 +205,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="366" y="173" width="980" height="602" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.071994714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32801822" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32801822" />
@@ -431,13 +442,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.2购物车总价.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.3显示姓名.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -445,34 +449,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.1 数据绑定和指令.html">
+    <entry file="file://$PROJECT_DIR$/3.2购物车总价.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="13" selection-end-line="14" />
+        <state relative-caret-position="22">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.2过滤器 指令和事件.html">
+    <entry file="file://$PROJECT_DIR$/4.1v-bind以及class与style的绑定.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="21" selection-start-line="27" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3 .1计算属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="325">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1489">
+          <first_editor relative-caret-position="1716">
             <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3 .1计算属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.1 数据绑定和指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.2过滤器 指令和事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
         </state>
       </provider>
     </entry>
