@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  [v-cloak]{
+    display: none;
+  }
+</style>
+<body>
+<div id="app">
+  v-if后面接的是等号，等号的内容必须是布尔值 <br>
+  v-if 的基本用法：
+  <p v-if="6<3">{{apple}}</p>
+  <p v-else-if="9>5">{{pineapple}}</p>
+  <p v-else>{{banana}}</p>
+  <div v-if="type==='name'">
+    用户名：<input type="text" placeholder="请输入用户名" key="name">
+  </div>
+  <div v-else>
+    密码：<input type="text" placeholder="请输入密码" key="psd">
+  </div>
+  <button v-on:click="toggle">点击切换</button>
+  v-show用法:显现与否取决于布尔值 <br>
+  <p v-show="9>a">我被渲染了</p>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+
+  var app =new Vue({
+    el:'#app',
+    data:{
+      apple:'apple',
+      banana:'banana',
+      pineapple:'pineapple',
+      type:'name',
+      a:3,
+    },
+    methods:{
+      //三目运算
+      toggle:function () {
+        return  this.type = (this.type==='name'? 'possword':'name')
+      }
+
+    },
+
+  })
+</script>
+</body>
+</html>

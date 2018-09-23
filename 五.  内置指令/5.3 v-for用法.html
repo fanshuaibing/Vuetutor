@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-for</title>
+</head>
+<body>
+<div id="app">
+  v-for的用法： 后边接等号，等号内关键字 类似item in items <br>
+  1. 遍历多个对象
+  <ul>
+    <li v-for="vueMth in vueMethods">{{vueMth.name}}</li>
+  </ul>
+
+  2.带索引的写法:括号的第一个变量是item,第二个是index <br>
+  <ul>
+    <li v-for="(vuemth,index) in vueMethods">{{index}}--{{vuemth.name}}</li>
+  </ul>
+  3.遍历一个对象的多个属性
+  <ul>
+    <li v-for="value in nvshen">{{value}}</li>
+  </ul>
+  <ul>
+    <li v-for="(value,key,index) in nvshen">第{{index}}个{{key}}是{{value}}</li>
+  </ul>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+
+  var app =new Vue({
+    el:'#app',
+    data:{
+      vueMethods:[
+        {name:'多思考'},
+        {name:'duoxie'},
+        {name:'duokan'}
+      ],
+      nvshen:{
+        gril1:'高圆圆',
+        gril2:'王菲',
+        gril:'陈红',
+      }
+
+
+    },
+  })
+</script>
+</body>
+</html>

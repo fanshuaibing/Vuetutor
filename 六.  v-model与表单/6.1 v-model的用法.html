@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  *{
+   margin: 5px;
+  }
+</style>
+<body>
+<div id="app" style="margin: 30px;">
+  v-model 的用法：<br>
+  <hr>
+  input和textarea的用法：<br>
+  <input type="text" v-model="value">
+  你输入的是： {{value}}
+  <br>
+  <hr>
+  <textarea name="" id="" cols="30" rows="10" v-model="msg">我是初始值</textarea>
+  <br>
+  {{msg}}
+  <hr>
+  单选框 <br>
+  单个单选框：只能用v-bind绑定 <input type="radio" name="" v-bind:checked="oneradio" > <br>
+  多个单选框：
+  <input type="radio" name="checks" value="大" v-model="checkname"> :大
+  <input type="radio" name="checks" value="中" v-model="checkname"> ：中
+  <input type="radio" name="checks" value="小" v-model="checkname"> : 小
+  现在选中的是： {{checkname}}
+  <br>
+  <hr>
+  复选框： <br>
+  单个复选框：v-bind  <input type="checkbox" v-bind:checked="oneradio"> <br>
+  单个复选框：v-model <input type="checkbox" v-model="oneradio">
+  多个复选框
+  <input type="checkbox" value="大" v-model="checks"> :大
+  <input type="checkbox"  value="中" v-model="checks"> ：中
+  <input type="checkbox" value="小" v-model="checks"> : 小
+   选中了：{{checks}}
+  <br>
+  <hr>
+  下拉框 <br>
+  单选的下拉框：
+  <select name="" id="" v-model="select">
+    <option value="大">大</option>
+    <option value="中">中</option>
+    <option value="小">小</option>
+  </select>
+  现在选中的是：{{select}}
+  <br>
+
+  多选的下拉框 <br>
+  <select v-model="selects"  multiple>
+    <option value="大">大</option>
+    <option value="中">中</option>
+    <option value="小">小</option>
+  </select>
+   现在选择的有：{{selects}}
+  <hr>
+  绑定值 <br>
+  单选按钮: <input type="radio" v-model="picked" v-bind:value="value"> {{picked}}
+  <hr>
+  多选按钮： <input type='checkbox'  v-model="toggle" :true-value="value1" :false-value="value2">
+  <br>
+  {{toggle}} <br>
+  我被选中了 {{toggle==value1}} <br>
+  我么有被选中 {{toggle==value2}} <br>
+  <hr>
+  下拉框
+  <select v-model="selectvalue" :value="{num:1}">
+    <option value="大">大</option>
+    <option value="中">中</option>
+    <option value="小">小</option>
+  </select>
+  选中的是：{{selectvalue}}
+
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  var app = new Vue({
+    el:'#app',
+    data:{
+      value:'',
+      msg:'',
+      oneradio:true,
+      checkname: '',
+      checks:[],
+      select:'',
+      selects:[],
+      picked: true,
+      value:"111111",
+      toggle:true,
+      value1:'我被选中了',
+      value2:'我没有被选中',
+      selectvalue:[],
+    }
+  })
+</script>
+
+</body>
+</html>
