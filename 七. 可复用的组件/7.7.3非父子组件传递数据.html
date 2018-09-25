@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  #app{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20vh;
+    padding: 10px;
+    width: 60vw;
+    height: 400px;
+    background: antiquewhite;
+  }
+</style>
+<body>
+<div id="app">
+  <mya-component></mya-component>
+  <br>
+  <hr>
+  <myb-component></myb-component>
+
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  Vue.component('mya-component',{
+    props:[''],
+    data:function(){
+      return{
+        aaa:"我是来自a组件的内容"
+      }
+    },
+    methods:{
+      handle:function () {
+        this.$root.bus.$emit('lala',this.aaa)
+      }
+    },
+    template:'<div>' +
+    '<button @click="handle">{{aaa}}</button>' +
+    '</div>'
+  })
+
+
+  Vue.component('myb-component',{
+    data:function(){
+      return{
+        bbb:"现在我是b组件自身的内容"
+      }
+    },
+    template:'<button>{{bbb}}</button>',
+    created:function () {
+      //a组件创建实例的时候就监听
+      this.$root.bus.$on('lala',(value)=> {
+        alert(value)
+        this.bbb = value
+      })
+
+    }
+  })
+  var app = new Vue({
+    el:'#app',
+    data:{
+      //bus中介
+      bus: new Vue()
+    },
+  })
+</script>
+
+</body>
+</html>

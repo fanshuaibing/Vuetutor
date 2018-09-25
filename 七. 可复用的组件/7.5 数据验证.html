@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  #app{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    width: 60vw;
+    height: 400px;
+    background: antiquewhite;
+    border: 2px solid gray;
+  }
+</style>
+<body>
+<div id="app">
+  html中必须用短横线链接 <br>
+   <my-component my-msg="llllll"></my-component>
+  <hr>
+  <type-component :a="a" :b="b"></type-component>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  Vue.component('my-component',{
+    props:['myMsg'],
+    template:'<div>{{abc}}</div>',//template中必须使用驼峰
+    data:function () {
+      return{
+         abc: this.myMsg  // this. 必须是驼峰
+      }
+    }
+  })
+  Vue.component('type-component',{
+    props:{
+      a: Number,
+      b:[String,Number],
+    },
+    template:'<div>{{a}}--{{b}}</div>',//template中必须使用驼峰
+
+  })
+  var app = new Vue({
+    el:'#app',
+    data:{
+      a:1,
+      b:666,
+    },
+  })
+</script>
+
+</body>
+</html>

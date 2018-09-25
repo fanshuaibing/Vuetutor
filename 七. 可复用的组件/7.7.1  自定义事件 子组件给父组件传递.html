@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  #app{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    padding: 10px;
+    width: 60vw;
+    height: 400px;
+    background: antiquewhite;
+  }
+</style>
+<body>
+<div id="app">
+  你的银行卡余额是：{{totol}}
+
+  <son-component @change="handleTotol"></son-component>
+  <hr>
+  <p>第一步：自定义事件</p>
+  <p>第二步：在子组件中用$emit触发事件，第一个参数是事件名，后边是传递的数据</p>
+  <p>第三步：在自定义事件中用参数来接受</p>
+
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  Vue.component('son-component',{
+    template:'<div> ' +
+    '<button @click="handleincrease">+1000</button>' +
+    ' <button @click="handlereduce">-1000</button>' +
+    ' </div>',
+    data:function () {
+      return  {
+        count:2000
+      }
+    },
+    methods:{
+      handleincrease:function () {
+        this.count =this.count +1000;
+        this.$emit('change',this.count)
+      },
+      handlereduce:function () {
+        this.count =this.count - 1000;
+        this.$emit('change',this.count)
+      }
+    }
+  })
+  var app = new Vue({
+    el:'#app',
+    data:{
+      totol:2000
+    },
+    methods:{
+      handleTotol:function (value) {
+        this.totol = value ;
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

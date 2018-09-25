@@ -7,15 +7,17 @@
 <body>
 <div id="app" style="border: 2px solid red; height: 100px;width: 100%">
  <my-component msg="我是父组件传递的数据"></my-component>
+  <input type="text" v-model="width">
+  <style-component :width="width"></style-component>
 </div>
 <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
 <script>
   Vue.component('my-component',{
     props:['msg'],
     template:'<div>{{count}}</div>',
-    data:function () {
-      return{
-        count:this.msg
+    data: function () {
+      return {
+        count: this.msg
       }
     }
   })
@@ -29,10 +31,25 @@
       'bind-component':{
         props:['parentmsg'],//来自父级的数据,作用域是组件本身
         template:'<div style="margin:10px; border: 2px solid cornflowerblue">{{parentmsg}}</div>'
+      },
+      'style-component':{
+        props:['width'],
+        template:'<div :style="style"></div>',
+        computed:{
+          style:function () {
+            return {
+              width: this.width + 'px',
+              height: "20px",
+              background: "red",
+
+            }
+          }
+        }
       }
     },
     data:{
       parentmsg:'今天月亮真圆',
+      width:''
     },
   })
 </script>

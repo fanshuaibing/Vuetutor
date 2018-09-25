@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="blog-posts-events-demo">
+  <div :style="{ fontSize: postFontSize + 'em' }">
+    <p>我要变大</p>
+    <blog-post
+        v-for="post in posts"
+        v-bind:key="post.id"
+        v-bind:post="post"
+        v-on:enlarge-text="postFontSize += 0.1"
+    ></blog-post>
+    <p>bianda</p>
+  </div>
+</div>
+
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  Vue.component('blog-post', {
+    props: ['post'],
+    template: `
+    <div class="blog-post">
+      <h3>{{ post.title }}</h3>
+      <button v-on:click="$emit('enlarge-text')">
+      etage txet
+      </button>
+      <div v-html="post.content"></div>
+    </div>
+  `
+  })
+   var app = new Vue({
+    el: '#blog-posts-events-demo',
+    data: {
+      posts: [{a:111},{b:222},{c:333}],
+      postFontSize: 1
+    }
+  })
+</script>
+</body>
+</html>

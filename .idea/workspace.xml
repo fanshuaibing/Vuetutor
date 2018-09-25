@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4910849-0b07-4949-a1d1-25fb94dfe1ff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/七. 可复用的组件/7.1 组件的使用方法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/七. 可复用的组件/7.2 组件时用的技巧.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/七. 可复用的组件/7.3 父组件向子组件 props传递.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/七. 可复用的组件/7.4  单线数据流props两种应用场景.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/七. 可复用的组件/7.5 数据验证.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/七. 可复用的组件/7.7.1  自定义事件 子组件给父组件传递.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/七. 可复用的组件/7.7.2 在组件中使用v-model.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/七. 可复用的组件/7.7.3非父子组件传递数据.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/七. 可复用的组件/官方实例 组件.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/七. 可复用的组件/7.1 组件的使用方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/七. 可复用的组件/7.1   组件的使用方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/七. 可复用的组件/7.2 组件时用的技巧.html" beforeDir="false" afterPath="$PROJECT_DIR$/七. 可复用的组件/7.2   组件时用的技巧.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/七. 可复用的组件/7.3 父组件向子组件 props传递.html" beforeDir="false" afterPath="$PROJECT_DIR$/七. 可复用的组件/7.3   父组件向子组件 props传递.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/七. 可复用的组件/7.4  单线数据流props两种应用场景.html" beforeDir="false" afterPath="$PROJECT_DIR$/七. 可复用的组件/7.4    单线数据流props两种应用场景.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二. 数据绑定、事件与指令/2.1 数据绑定和指令.html" beforeDir="false" afterPath="$PROJECT_DIR$/二.  数据绑定、事件与指令/2.1 数据绑定和指令.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二. 数据绑定、事件与指令/2.2过滤器 指令和事件.html" beforeDir="false" afterPath="$PROJECT_DIR$/二.  数据绑定、事件与指令/2.2过滤器 指令和事件.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/四. v-bind 与 class style的绑定/4.1v-bind以及class与style的绑定.html" beforeDir="false" afterPath="$PROJECT_DIR$/四.  v-bind 与 class style的绑定/4.1v-bind以及class与style的绑定.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,52 +29,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="7.1 组件的使用方法.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.1 组件的使用方法.html">
+      <file leaf-file-name="7.4    单线数据流props两种应用场景.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.4    单线数据流props两种应用场景.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="-110">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7.7.2 在组件中使用v-model.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.7.2 在组件中使用v-model.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7.7.3非父子组件传递数据.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.7.3非父子组件传递数据.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="官方实例 组件.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/官方实例 组件.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7.5 数据验证.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.5 数据验证.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7.3   父组件向子组件 props传递.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.3   父组件向子组件 props传递.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7.2   组件时用的技巧.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.2   组件时用的技巧.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7.1   组件的使用方法.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.1   组件的使用方法.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
               <caret line="13" column="17" selection-start-line="13" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="7.3 父组件向子组件 props传递.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.3 父组件向子组件 props传递.html">
+      <file leaf-file-name="6.1 v-model的用法.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/六.  v-model与表单/6.1 v-model的用法.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="34" selection-end-column="7" />
+            <state relative-caret-position="325">
+              <caret line="79" column="17" lean-forward="true" selection-start-line="79" selection-end-line="80" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="7.2 组件时用的技巧.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.2 组件时用的技巧.html">
+      <file leaf-file-name="7.7.1  自定义事件 子组件给父组件传递.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.7.1  自定义事件 子组件给父组件传递.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="7.4  单线数据流props两种应用场景.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.4  单线数据流props两种应用场景.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="523">
+              <caret line="57" column="36" lean-forward="true" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -110,6 +172,18 @@
         <option value="$PROJECT_DIR$/七. 可复用的组件/7.2 组件时用的技巧.html" />
         <option value="$PROJECT_DIR$/七. 可复用的组件/7.4  单线数据流props两种传递方式.html" />
         <option value="$PROJECT_DIR$/七. 可复用的组件/7.4  单线数据流props两种应用场景.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/7.4    单线数据流props两种应用场景.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/7.6 数据验证.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/7.5 单向数据流.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/7.5 数据验证.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/7.6  自定义组件 子组件个父组件传递数据.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/7.7 .1  组建通信 子组件给父组件传递.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/7.7 .1  自定义组件 子组件给父组件传递.html" />
+        <option value="$PROJECT_DIR$/1.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/7.7.2 在组件中使用v-model.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/7.7 .1  自定义事件 子组件给父组件传递.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/7.7.3非父子组件传递数据.html" />
+        <option value="$PROJECT_DIR$/七. 可复用的组件/官方实例 组件.html" />
       </list>
     </option>
   </component>
@@ -123,14 +197,15 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="377" />
-    <option name="y" value="288" />
+    <option name="x" value="162" />
+    <option name="y" value="163" />
     <option name="width" value="1430" />
-    <option name="height" value="942" />
+    <option name="height" value="960" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <sortByType ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -150,17 +225,7 @@
             <path>
               <item name="Vuetutor" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vuetutor" type="462c0819:PsiDirectoryNode" />
-              <item name="五.  内置指令" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vuetutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vuetutor" type="462c0819:PsiDirectoryNode" />
               <item name="六.  v-model与表单" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vuetutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vuetutor" type="462c0819:PsiDirectoryNode" />
-              <item name="四. v-bind 与 class style的绑定" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -179,12 +244,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fatfa\Desktop\Vuetutor\七. 可复用的组件" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fatfa\Desktop\Vuetutor" />
       <recent name="C:\Users\fatfa\Desktop\Vuetutor\五.  内置指令" />
       <recent name="C:\Users\fatfa\Desktop\Vuetutor\四. v-bind 与 class style的绑定" />
       <recent name="C:\Users\fatfa\Desktop\Vuetutor\三. 计算属性与方法" />
       <recent name="C:\Users\fatfa\Desktop\Vuetutor\二. 数据绑定、事件与指令" />
-      <recent name="C:\Users\fatfa\Desktop\Vuetutor\六.  v-model与表单" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -219,12 +287,13 @@
       <workItem from="1537443803043" duration="7093000" />
       <workItem from="1537685434306" duration="8603000" />
       <workItem from="1537716627530" duration="6864000" />
-      <workItem from="1537768909476" duration="6559000" />
+      <workItem from="1537768909476" duration="8017000" />
+      <workItem from="1537858079070" duration="16035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51020000" />
+    <option name="totallyTimeSpent" value="68513000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -236,10 +305,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="302" y="231" width="1144" height="753" extended-state="0" />
-    <editor active="true" />
+    <frame x="318" y="160" width="1144" height="768" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12635379" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.1696751" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32801822" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32801822" />
@@ -262,7 +330,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22786458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23916967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -284,66 +352,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.1 数据绑定和指令.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/三. 计算属性与方法/3 .1计算属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1716">
-            <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/四. v-bind 与 class style的绑定/4.1v-bind以及class与style的绑定.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/三. 计算属性与方法/3.2购物车总价.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/三. 计算属性与方法/3.3显示姓名.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.2过滤器 指令和事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.1 数据绑定和指令.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.1 数据绑定和指令.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" selection-start-line="13" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.2过滤器 指令和事件.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.2过滤器 指令和事件.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="27" column="21" selection-start-line="27" selection-end-line="28" />
@@ -381,14 +397,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.1 数据绑定和指令.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.1 数据绑定和指令.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" selection-start-line="13" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.2过滤器 指令和事件.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.2过滤器 指令和事件.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="27" column="21" selection-start-line="27" selection-end-line="28" />
@@ -426,14 +442,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.1 数据绑定和指令.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.1 数据绑定和指令.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" selection-start-line="13" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.2过滤器 指令和事件.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.2过滤器 指令和事件.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="27" column="21" selection-start-line="27" selection-end-line="28" />
@@ -471,7 +487,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.1 数据绑定和指令.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.1 数据绑定和指令.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
@@ -485,14 +501,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.1 数据绑定和指令.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.1 数据绑定和指令.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.1 数据绑定和指令.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.1 数据绑定和指令.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
@@ -502,7 +518,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.1 数据绑定和指令.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.1 数据绑定和指令.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
@@ -553,7 +569,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/四. v-bind 与 class style的绑定/4.1v-bind以及class与style的绑定.html">
+    <entry file="file://$PROJECT_DIR$/四.  v-bind 与 class style的绑定/4.1v-bind以及class与style的绑定.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
@@ -574,14 +590,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.1 数据绑定和指令.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.1 数据绑定和指令.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二. 数据绑定、事件与指令/2.2过滤器 指令和事件.html">
+    <entry file="file://$PROJECT_DIR$/二.  数据绑定、事件与指令/2.2过滤器 指令和事件.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
@@ -605,9 +621,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.6 数据验证.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/官方实例 组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.7.3非父子组件传递数据.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.4    单线数据流props两种应用场景.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.5 数据验证.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.7.1  自定义事件 子组件给父组件传递.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="57" column="36" lean-forward="true" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.7.2 在组件中使用v-model.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/六.  v-model与表单/6.1 v-model的用法.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="325">
           <caret line="79" column="17" lean-forward="true" selection-start-line="79" selection-end-line="80" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -615,44 +690,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.1 组件的使用方法.html">
+    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.1   组件的使用方法.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="220">
           <caret line="13" column="17" selection-start-line="13" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.2 组件时用的技巧.html">
+    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.2   组件时用的技巧.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="638">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.3 父组件向子组件 props传递.html">
+    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.3   父组件向子组件 props传递.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="34" selection-end-column="7" />
+        <state relative-caret-position="449">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/七. 可复用的组件/7.4  单线数据流props两种应用场景.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

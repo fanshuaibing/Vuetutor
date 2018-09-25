@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  #app{
+    margin-left: auto;
+    margin-right: auto;
+    margintop:20vh;
+    width: 60vw;
+    height: 400px;
+    background: antiquewhite;
+  }
+</style>
+<body>
+<div id="app">
+  银行卡余额是：{{totol}} <br>
+  <son-component v-model="totol"></son-component>
+  <hr>
+  <p>接受一个value</p>
+  <p>在有新的value是触发input事件</p>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  Vue.component('son-component',{
+    props:[''],
+    template:'<button @click="handleincrease">+1000</button>',
+    data:function(){
+      return{
+        count:2000
+      }
+    },
+    methods:{
+      handleincrease:function () {
+        this.count = this.count + 1000
+        this.$emit('input',this.count)
+      }
+    }
+  })
+  var app = new Vue({
+    el:'#app',
+    data:{
+      totol:2000
+    }
+
+  })
+</script>
+
+</body>
+</html>
