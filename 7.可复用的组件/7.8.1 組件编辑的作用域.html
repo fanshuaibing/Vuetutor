@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  #app{
+    margin-left: auto;
+    margin-right: auto;
+    margintop:20vh;
+    width: 60vw;
+    height: 400px;
+    background: antiquewhite;
+  }
+</style>
+<body>
+<div id="app">
+  <my-component>
+    <p>我是父组件中的数据</p>
+  </my-component>
+</div>
+
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  Vue.component('my-component',{
+    props:[''],
+    data:function () {
+
+    },
+    template:'<div style="">\n' +
+    '  <slot></slot>\n' +
+    '</div>'
+  })
+  var app = new Vue({
+    el:'#app',
+    data:{
+
+    },
+  })
+</script>
+
+</body>
+</html>

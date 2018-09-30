@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  #app{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20vh;
+    width: 60vw;
+    height: 400px;
+    background: antiquewhite;
+  }
+</style>
+<body>
+<div id="app">
+  <my-component></my-component>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  Vue.component('my-component',{
+    props:[''],
+    template:'<div>我是一个组件</div>'
+  })
+  var app = new Vue({
+    el:'#app',
+    data:{
+
+    },
+  })
+</script>
+
+</body>
+</html>

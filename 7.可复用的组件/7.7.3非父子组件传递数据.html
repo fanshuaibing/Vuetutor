@@ -17,11 +17,16 @@
 </style>
 <body>
 <div id="app">
-  <mya-component></mya-component>
+  <mya-component ref="a"></mya-component>
   <br>
   <hr>
   <myb-component></myb-component>
-
+  <hr>
+   <p>从父组件拿数据</p>
+  <child-component></child-component>--{{msg}}
+  <hr>
+  <p>获取子组件的数据</p>
+  <button @click="getChildData">点击获取子组件的数据</button> --{{formchild}}
 </div>
 <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
 <script>
@@ -29,12 +34,14 @@
     props:[''],
     data:function(){
       return{
-        aaa:"我是来自a组件的内容"
+        msg:"我是来自a组件的内容",
+        aaa:'我是来自a组件的内容'
       }
     },
     methods:{
       handle:function () {
         this.$root.bus.$emit('lala',this.aaa)
+        alert('我把我的数据传给b了')
       }
     },
     template:'<div>' +
@@ -59,12 +66,31 @@
 
     }
   })
+  Vue.component('child-component',{
+    template:'<button @click="setFatherData">通过点击我修改父亲的数据</button>',
+  methods:{
+    setFatherData:function () {
+      this.$parent.msg = '父组件数据已经修改了'
+    }
+  }
+  })
+
   var app = new Vue({
     el:'#app',
     data:{
       //bus中介
-      bus: new Vue()
+      bus: new Vue(),
+      msg:'我是父组件的数',
+      formchild:'还未拿到',
     },
+
+    methods:{
+      getChildData:function () {
+        //用来拿子组件中的内容 ---- $refs
+        this.formchild = this.$refs.a.msg;
+      }
+    }
+
   })
 </script>
 
