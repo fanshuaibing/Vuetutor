@@ -17,12 +17,24 @@
 </style>
 <body>
 <div id="app">
- 
+  <my-component>
+    用this.$scopedSlots.default({}) 传递数据
+    <template scope="prop">
+      {{prop.text}}--{{prop.msg}}
+    </template>
+  </my-component>
 </div>
+<div><slot></slot></div>
 <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
 <script>
-  Vue.component('',{
-
+  Vue.component('my-component',{
+    render:function (createElement) {
+      //相当于<div><slot :text="text"></slot></div>
+      return createElement('div',this.$scopedSlots.default({
+        text:'我是子组件传来的数据',
+        msg:'scopedSlots'
+      }))
+    }
   })
   var app = new Vue({
     el:'#app',

@@ -17,17 +17,23 @@
 </style>
 <body>
 <div id="app">
- 
+  <child></child>
 </div>
 <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
 <script>
-  Vue.component('',{
+  Vue.component('child',{
+    render:function (createElement) {
+      return createElement('div',[
+          createElement('h1','我是h1中的标题'),
+          createElement('h4','我是h4中的标题'),
 
+      ])
+    }
   })
   var app = new Vue({
     el:'#app',
     data:{
-
+      level:2,
     },
   })
 </script>

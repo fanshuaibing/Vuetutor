@@ -17,17 +17,21 @@
 </style>
 <body>
 <div id="app">
- 
+  <child :level="level">我是蜡笔小新</child>
 </div>
 <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
 <script>
-  Vue.component('',{
-
+  Vue.component('child',{
+    render:function (createElement) {
+      return createElement('h'+this.level,
+          this.$slots.default);
+    },
+    props:['level']
   })
   var app = new Vue({
     el:'#app',
     data:{
-
+      level:2,
     },
   })
 </script>

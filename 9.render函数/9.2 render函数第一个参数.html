@@ -17,17 +17,27 @@
 </style>
 <body>
 <div id="app">
- 
+  <child></child>
 </div>
 <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
 <script>
-  Vue.component('',{
-
+  Vue.component('child',{
+    //第一个参数是 string object function
+    render:function (createElement) {
+      // return createElement('div');
+      /* return createElement({
+          template:'<h1>你好啊，我是第一个参数</h1>'
+         })*/
+      var domF = function () {
+        return {template:'<h1>我是第一個參數</h1>'}
+      }
+      return createElement(domF())
+    }
   })
   var app = new Vue({
     el:'#app',
     data:{
-
+      level:2,
     },
   })
 </script>

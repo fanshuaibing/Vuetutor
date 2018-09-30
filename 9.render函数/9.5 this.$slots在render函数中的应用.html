@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  #app {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    padding: 20px;
+    width: 60vw;
+    height: 400px;
+    background: antiquewhite;
+  }
+</style>
+<body>
+<div id="app">
+ <my-component>
+    <h1 slot="header">我是标题</h1>
+    <p>我是文章第一段</p>
+    <p>我是文章第二段</p>
+    <h3 slot="footer">我是文章页脚</h3>
+ </my-component>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  Vue.component('my-component', {
+    render: function (createElement) {
+      var header = this.$slots.header; //--这返回的内容就是含有=V
+      NODE的数组
+      var main = this.$slots.default;
+      var footer = this.$slots.footer;
+      return createElement('div', [
+        createElement('header', header),
+        createElement('main', main),
+        createElement('footer', footer)
+      ]);
+    }
+  })
+
+</script>
+</body>
+</html>

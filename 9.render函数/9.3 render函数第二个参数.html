@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  #app{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20vh;
+    padding: 20px;
+    width: 60vw;
+    height: 400px;
+    background: antiquewhite;
+  }
+</style>
+<body>
+<div id="app">
+  <child></child>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  Vue.component('child',{
+    //第二个参数可选，只能是对象 object
+    render:function (createElement) {
+      return createElement({
+        template:'<div>我是第二個參數渲染出來的</div>'
+      },{
+        'class':{
+          foo: true,
+          bar: false
+        },
+        style:{
+          color:'red',
+          fontSize:'16px'
+        },
+        attrs:{
+          id:'second',
+        },
+        //用來写原生的Dom属性
+        domProps:{
+          innerHTML:'<h1>我是domProps中定义的</h1>'
+        }
+
+      });
+      /* return createElement({
+          template:'<h1>你好啊，我是第一个参数</h1>'
+         })*/
+     /* var domF = function () {
+        return {template:'<h1>我是第一個參數</h1>'}
+      }
+      return createElement(domF())*/
+    }
+  })
+  var app = new Vue({
+    el:'#app',
+    data:{
+      level:2,
+    },
+  })
+</script>
+
+
+
+</body>
+</html>

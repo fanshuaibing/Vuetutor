@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  #app{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20vh;
+    padding: 20px;
+    width: 60vw;
+    height: 400px;
+    background: antiquewhite;
+  }
+</style>
+<body>
+<div id="app">
+ <child :text="text" value="hhhh"></child>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script>
+  Vue.component('child',{
+    functional:true,
+    props:['text'],
+    render:function (createElement,context) {
+      console.log(context);
+      return createElement('button',{
+        on:{
+          click(){
+            console.log(context);
+            console.log(context.data.attrs);
+            console.log(context.parent)
+            console.log(context.children)
+            console.log(context.props)
+
+          }
+        }
+      },'hhhsaas')
+
+    },
+    date:function () {
+      return {
+        first: '我是子组件的第一条数据',
+        second:'我是子组件的第二条数据'
+      }
+    }
+  })
+  var app = new Vue({
+    el:'#app',
+    data:{
+      text:'我是父组件中的数据',
+      msg:'我是父元素的信息'
+    },
+  })
+</script>
+
+
+
+</body>
+</html>
