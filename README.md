@@ -84,3 +84,93 @@ dblclick、 keyup, mousemove 等。表达式可以是一个方法名，这些方
 过滤器：{{ data | filter | filter}}
 {{date | formatDate(a,b)}} 中的第一个和第二个参数
 分别对应过滤器的第二个和第三个参数
+
+## 三. 计算属性
+### 计算属性（减少模板{{}}的复杂度）
+* 基础例子1
+* 计算属性的两种写法
+```
+						computed
+<div id="app">
+   {{fullName}}
+</div>
+
+new Vue({
+  el: "#app",
+  data: {
+  		firstName:'Ji',
+   	 	lastName:'RenGu'
+  },
+ 	computed:{
+  	fullName(){
+    	return this.firstName+'----'+this.lastName;
+    }
+  }
+})
+```
+* 计算缓存vs方法(Methods)
+    * 计算属性computed具有缓存，而methods无缓存
+* Computed属性vs 侦听器(Watch属性)
+    * watch方法--观察Vue实例上的数据变动,只要指定的数据改变就会执行预定的函数
+```
+    			watch
+    <div id="app">
+        {{msg}} <br> 
+        改变了吗? {{isChange}}
+        <button @click="change">改变</button>
+    </div>
+    
+    new Vue({
+      el: "#app",
+      data: {
+            msg:'欲穷千里目',
+          isChange:'No'
+      },
+        watch:{
+        //只要msg改变,这个方法就会执行
+        msg(val,oldVal){
+            this.isChange = 'Yes'
+        }
+      },
+      methods:{//不得不说ES6写起来真爽
+        change(){
+            this.msg = '更上一层楼'
+        }
+      }
+    })
+```
+    * computed方法
+* 计算setter 和getter
+    * get和set,顾名思义,一个是获得,一个是设置,常规上来讲,计算属性中都是有get和set方法的,默认是只有getter方法,如果需要的话,自然,你也可以写一个setter方法.来个例子,诸位往下看:
+   
+```						
+<div id="app">
+ 此时的onpiece: {{onepiece}} <br>
+ 此时的msg:  {{msg}} <br><br>
+  <button @click="setName">设置name</button>
+</div>		
+
+new Vue({
+  el: "#app",
+  data: {
+  	name:'Kobe',
+    msg:''
+  },
+  methods:{
+  	setName(){
+    	this.onepiece = 'JorDan'
+    }
+  },
+  computed:{
+  	onepiece:{
+        get(){
+          return this.name +'Bryant';
+        },
+        set(newVal){
+          //当你给onepiece设置值的时候set就就会调用
+          this.msg = newVal+'is the greatest basketball player';
+        }
+    }
+  }
+})
+```
